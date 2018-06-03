@@ -1,6 +1,5 @@
-Check out the project here: [TV shows](https://dule012.github.io/tv-shows-react_js/)
+Check out the project here: [Chating with Bot](https://dule012.github.io/chating-with-bot-react.js/)
 
-It works just clone it and try :)
 ## Stack
 ### Language: 
 - HTML5 
