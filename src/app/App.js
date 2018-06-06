@@ -46,7 +46,8 @@ class App extends Component {
     if(this.state.inputValue !== ''){
     this.props.socket.emit('send message',{text: this.state.inputValue})
     this.setState(prevState => ({
-      arr: [...prevState.arr,{text: this.state.inputValue, type: 'user'}]
+      arr: [...prevState.arr,{text: this.state.inputValue, type: 'user'}],
+      inputValue: ''
    }))
   }
 }
@@ -55,9 +56,9 @@ class App extends Component {
   sendOnEnter= (event)=>{
     if(event.key == 'Enter' && this.state.inputValue != ''){
       this.send()
-      this.setState({
-        inputValue: ''
-      })
+      // this.setState({
+      //   inputValue: ''
+      // })
     }
   }
 
